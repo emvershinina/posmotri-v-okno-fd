@@ -152,7 +152,7 @@ ol {
 
 .search-form__textfield {
   font-family: "Fira Sans Condensed", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -259,11 +259,12 @@ ol {
   letter-spacing: 0%;
   text-align: left;
   line-height: 16.2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-top: 6px;
-  line-clamp: 1;
-  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
@@ -299,8 +300,8 @@ ol {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  border: 1px solid #fff;
   color: #ffffff;
+  border: 1px solid currentColor;
   line-height: 22px;
   background-color: transparent;
   block-size: 34px;
